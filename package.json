@@ -1,9 +1,12 @@
 {
+  "homepage":"https://github.com/Sushma-Nandiyawar/Sushma-Nandiyawar-Portfolio",
   "name": "react-resume-template",
   "version": "2.0.0",
   "private": true,
   "scripts": {
     "build": "yarn compile && yarn next build",
+    "predeploy":"yarn run build",
+    "deploy":"gh-pages -d build",
     "clean": "rm -rf build-tsc .next",
     "compile": "yarn run -T tsc --build --verbose",
     "dev": "yarn compile && yarn next dev",
@@ -45,6 +48,7 @@
     "eslint-plugin-react-native": "^4.0.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.27",
     "postcss-preset-env": "^9.1.0",
     "prettier": "^3.0.0",
